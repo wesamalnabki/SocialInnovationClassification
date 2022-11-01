@@ -7,8 +7,6 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("-t", "--topx", dest="topx", default=None,
-                        help="top X files to select from the unlabeled projects")
 
     parser.add_argument("-d", "--dataset", dest="dataset", default=None,
                         help="A CSV to be used for training and testing")
@@ -18,5 +16,5 @@ if __name__ == "__main__":
 
     # dataset_path = 'dataset/training_bert-base-cased_2022-10-11_23-25_df.csv'
     trainer = SocialInnovationClassifierTraining()
-    ds = trainer.load_training_set(dataset_path, top_x=None, save_finally=True)
+    ds = trainer.load_training_set(dataset_path, save_finally=True)
     trainer.training_classifiers(ds)
