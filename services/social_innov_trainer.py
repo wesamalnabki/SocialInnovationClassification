@@ -21,8 +21,8 @@ class SocialInnovationClassifierTraining:
 
     def __init__(self):
 
-        self.model_name = "bert-base-cased"
-        self.model_type = "bert"
+        self.model_name = model_name
+        self.model_type = model_type
 
         # format it to a string
         timestamp_format = datetime.now().strftime('%Y-%m-%d_%H-%M')
@@ -75,7 +75,7 @@ class SocialInnovationClassifierTraining:
         os.makedirs(self.run_path, exist_ok=True)
 
         # Start building a classifier for each criterion
-        for CRITERION in CRITERIONS:
+        for CRITERION in SI_Criteria:
 
             self.logger.info(f'Training a classifier for {CRITERION}')
             # read three columns from the cvs file:
