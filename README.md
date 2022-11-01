@@ -89,3 +89,7 @@ python learning-curve.py --step_size 50 --dataset
 
 The step_size refers to the size of samples to use used for training each time. The dataset is an optional parameter (
 see predict.py).
+
+
+Note, the database_access.py file is not provided. It has the following parameters, as shown below:
+![images/config.png](images/config.png)
