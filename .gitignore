@@ -1,0 +1,7 @@
+/models/Actors/pytorch_model.bin
+/models/Objectives/pytorch_model.bin
+/models/Outputs/pytorch_model.bin
+/models/Innovations/pytorch_model.bin
+/models/
+/data_collector/database_access.py
+/dataset/

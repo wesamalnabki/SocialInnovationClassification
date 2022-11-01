@@ -1,0 +1,11 @@
+simpletransformers~=0.63.9
+bert-extractive-summarizer==0.8.1
+scikit-learn~=1.1.2
+nltk~=3.7
+numpy~=1.23.3
+pandas~=1.5.0
+torch~=1.12.1+cu113
+pymysql~=1.0.2
+sshtunnel~=0.4.0
+pymongo~=4.2.0
+tqdm~=4.64.1
